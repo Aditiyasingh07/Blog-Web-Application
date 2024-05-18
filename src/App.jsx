@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import authService from "./Appwrite/auth"
 import { login, logout } from './store/authSlice'
 import {Header, Footer} from "./componenets/index"
+import { Outlet } from 'react-router-dom'
 
 function App() {
   
@@ -24,10 +25,11 @@ function App() {
 
  return !loading ? (
   <div className=' flex flex-wrap w-screen h-screen bg-slate-500'>
-    <div className=' w-full block flex items-center flex-col '>
+    <div className=' w-full flex items-center flex-col '>
       <Header/>
       <main>
-      Blogs  {/* <Outlet/> */}
+      Blogs:  
+      <Outlet/>
       </main>
       <Footer/>
     </div>

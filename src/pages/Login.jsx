@@ -3,7 +3,7 @@ import {Login as LoginComponent} from "../componenets/index"
 
 function Login() {
     return(
-        <div className=" py-7">
+        <div className=" py-7 w-full">
             <LoginComponent/>
         </div>
     )

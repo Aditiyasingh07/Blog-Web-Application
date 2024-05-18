@@ -1,11 +1,11 @@
 import React, {useId} from "react";
 
-function Select({
-    label,
+function Select(
+    {label,
     options,
     className="",
     ...props
-}, ref) {
+    }, ref) {
     
     const id = useId()
 
@@ -18,9 +18,9 @@ function Select({
             ref={ref}
             className={`px-3 py-2 rounded-lg ${className}`}
             >
-                {options?.map((option)=>(
-                    <option key={option} value={option}>
-                        {option}
+                {options?.map((children)=>(
+                    <option key={children} value={children}>
+                        {children}
                     </option>
                 ))}
             </select>

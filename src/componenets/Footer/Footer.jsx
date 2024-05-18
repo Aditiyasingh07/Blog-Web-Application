@@ -4,7 +4,7 @@ import Logo from '../logo'
 
 export default function Footer() {
   return (
-    <section className=" absolute bottom-0 w-full py-10 rounded-2xl bg-slate-600">
+    <section className=" static bottom-0 w-full h-1/2 py-10 rounded-2xl bg-slate-600">
             <div className="relative z-10 mx-auto max-w-7xl px-4">
                 <div className="-m-6 flex flex-wrap">
                     <div className="w-full p-6 md:w-1/2 lg:w-5/12">

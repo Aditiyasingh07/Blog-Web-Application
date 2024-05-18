@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
 
- function Logo() {
+function Logo() {
   return (
-    <div>Logo</div>
-  )
+    <>
+    <div>
+      <img src="12Blog\src\assets\icon.png" alt="#logo" width="45px" />
+    </div>
+    </>
+  );
 }
 
-export default Logo
-
+export default Logo;
