@@ -24,11 +24,11 @@ function App() {
   }, [])
 
  return !loading ? (
-  <div className=' flex flex-wrap w-screen h-screen bg-slate-500'>
+  <div className=' flex flex-wrap w-full h-full bg-gray-900'>
     <div className=' w-full flex items-center flex-col '>
       <Header/>
       <main>
-      Blogs:  
+      <div className='text-3xl flex justify-center font-bold my-10'>Blogs</div>  
       <Outlet/>
       </main>
       <Footer/>

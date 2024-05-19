@@ -29,9 +29,9 @@ function Login() {
   };
 
   return (
-    <div className="flex w-full">
+    <div className="flex w-full my-5">
       <div
-        className={`mx-auto flex justify-center flex-col items-center w-full max-w-lg bg-[#343434] rounded-xl p-10 border border-black/10`}
+        className={`mx-auto flex justify-center flex-col items-center w-full max-w-lg bg-[#343434] rounded-lg hover:rounded-3xl duration-700 p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="w-full font-bold text-2xl">
@@ -41,22 +41,23 @@ function Login() {
         <h2 className="text-center text-2xl font-bold leading-tight">
           Login in to your account
         </h2>
-        <p className="mt-2 text-center text-base text-black/60">
+        <p className="mt-2 text-center text-base">
           Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"
-            className="font-medium text-primary transition-all duration-200 hover:underline"
+            className="font-medium text-primary transition-all duration-200 hover:text-slate-400"
           >
             Sign in
           </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
         <form onSubmit={handleSubmit(login)} className="mt-8">
-          <div className="space-y-5">
+          <div className="space-y-2 flex flex-col text-center items-center font-bold">
             <Input
-              label="Email: "
+              label="Email:"
               placeholder="Enter your email"
               type="email"
+              className=" w-full rounded-2xl outline-none p-2 text-center"
               {...register("email", {
                 required: true,
                 validate: {
@@ -69,12 +70,13 @@ function Login() {
             <Input
               label="Password: "
               type="password"
+              className=" w-full text-center rounded-2xl outline-none mb-5 p-2"
               placeholder="Enter your password"
               {...register("password", {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="flex p-2 rounded-2xl bg-blue-500 justify-center w-1/2">
               Login
             </Button>
           </div>

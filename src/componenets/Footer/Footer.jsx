@@ -4,16 +4,16 @@ import Logo from '../logo'
 
 export default function Footer() {
   return (
-    <section className=" static bottom-0 w-full h-1/2 py-10 rounded-2xl bg-slate-600">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
+    <section className="w-full py-10 rounded-2xl bg-slate-600">
+            <div className="mx-auto max-w-7xl">
+                <div className="m-6 flex flex-wrap">
                     <div className="w-full p-6 md:w-1/2 lg:w-5/12">
                         <div className="flex h-full flex-col justify-between">
                             <div className="mb-4 inline-flex items-center">
                                 <Logo width="100px" />
                             </div>
                             <div>
-                                <p className="text-sm text-gray-600">
+                                <p className="text-sm">
                                     &copy; Copyright 2023. All Rights Reserved by DevUI.
                                 </p>
                             </div>
