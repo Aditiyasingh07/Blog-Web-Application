@@ -20,12 +20,15 @@ function Login() {
       const session = await authService.login(data);
       if (session) {
         const userdata = await authService.getCurrentUser();
-        if (userdata) dispatch(authLogin(userdata));
-        navigate("/");
+        if (userdata) {
+          dispatch(authService.login(userdata)); 
+          navigate("/");
+        }
       }
     } catch (error) {
       setError(error.message);
     }
+    console.log(error);
   };
 
   return (

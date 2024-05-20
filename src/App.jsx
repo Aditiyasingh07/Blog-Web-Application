@@ -23,12 +23,14 @@ function App() {
     .finally(()=> setLoading(false))
   }, [])
 
+
  return !loading ? (
   <div className=' flex flex-wrap w-full h-full bg-gray-900'>
     <div className=' w-full flex items-center flex-col '>
       <Header/>
       <main>
-      <div className='text-3xl flex justify-center font-bold my-10'>Blogs</div>  
+      <div className='text-3xl flex justify-center font-bold my-10'>Blogs
+      </div>  
       <Outlet/>
       </main>
       <Footer/>
