@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import appwriteService from "../../src/appwrite/config.js";
+import appwriteService from "../Appwrite/config.js";
 import { Container, PostCard } from "../componenets/index.js";
 
 function Home() {
@@ -29,18 +29,18 @@ function Home() {
     );
   }
   return (
-    <div className='w-full py-8'>
-        <Container>
-            <div className='flex flex-wrap'>
-                {posts.map((post) => (
-                    <div key={post.$id} className='p-2 w-1/4'>
-                        <PostCard {...post} />
-                    </div>
-                ))}
+    <div className="w-full py-8">
+      <Container>
+        <div className="flex flex-wrap">
+          {posts.map((post) => (
+            <div key={post.$id} className="p-2 w-1/4">
+              <PostCard {...post} />
             </div>
-        </Container>
+          ))}
+        </div>
+      </Container>
     </div>
-)
+  );
 }
 
 export default Home;

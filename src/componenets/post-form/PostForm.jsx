@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Input, RTE, Select } from "..";
-import appwriteService from "../../appwrite/config";
+import appwriteService from "../../Appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -81,26 +81,26 @@ export default function PostForm({ post }) {
       <div className="w-2/3 text-center px-2 text-xl font-bold">
         <div className="flex w-full flex-col gap-y-2 items-center">
           <label>Title</label>
-        <Input
-          // label="Title :"
-          placeholder="Title"
-          className="mb-4 bg-[#ECF0F1] text-slate-800 w-[80%] h-10 rounded-2xl text-center"
-          {...register("title", { required: true })}
-        />
+          <Input
+            // label="Title :"
+            placeholder="Title"
+            className="mb-4 bg-[#ECF0F1] text-slate-800 w-[80%] h-10 rounded-2xl text-center"
+            {...register("title", { required: true })}
+          />
         </div>
         <div className="flex w-full flex-col gap-y-2 items-center">
           <label>Slug</label>
-        <Input
-          // label="Slug :"
-          placeholder="Slug"
-          className="mb-7 bg-[#ECF0F1] w-[80%] h-10 text-slate-800 rounded-2xl text-center"
-          {...register("slug", { required: true })}
-          onInput={(e) => {
-            setValue("slug", slugTransform(e.currentTarget.value), {
-              shouldValidate: true,
-            });
-          }}
-        />
+          <Input
+            // label="Slug :"
+            placeholder="Slug"
+            className="mb-7 bg-[#ECF0F1] w-[80%] h-10 text-slate-800 rounded-2xl text-center"
+            {...register("slug", { required: true })}
+            onInput={(e) => {
+              setValue("slug", slugTransform(e.currentTarget.value), {
+                shouldValidate: true,
+              });
+            }}
+          />
         </div>
         <RTE
           label="Content :"
@@ -112,13 +112,13 @@ export default function PostForm({ post }) {
       <div className="w-1/3 px-2">
         <div className="flex flex-col gap-y-2">
           <label className="font-bold">Featured Image</label>
-        <Input
-          // label="Featured Image :"
-          type="file"
-          className="mb-4 bg-[#ECF0F1] text-black rounded-xl"
-          accept="image/png, image/jpg, image/jpeg, image/gif"
-          {...register("image", { required: !post })}
-        />
+          <Input
+            // label="Featured Image :"
+            type="file"
+            className="mb-4 bg-[#ECF0F1] text-black rounded-xl"
+            accept="image/png, image/jpg, image/jpeg, image/gif"
+            {...register("image", { required: !post })}
+          />
         </div>
         {post && (
           <div className="w-full mb-4">

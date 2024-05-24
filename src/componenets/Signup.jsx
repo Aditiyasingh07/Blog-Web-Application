@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import authService from "../appwrite/auth";
+import authService from "../Appwrite/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/authSlice";
 import { Button, Input } from "./index";

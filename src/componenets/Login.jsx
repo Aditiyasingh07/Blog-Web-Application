@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authSlice";
 import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
-import authService from "../appwrite/auth";
+import authService from "../Appwrite/auth";
 import { useForm } from "react-hook-form";
 
 function Login() {
@@ -52,31 +52,35 @@ function Login() {
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <div className=" text-xl flex flex-col gap-y-4 text-center">
-            <Input
-              label="Email: "
-              placeholder="Enter your email"
-              type="email"
-              className="flex text-[1rem] outline-none text-center m-auto h-10 w-[90%] rounded-2xl"
-              {...register("email", {
-                required: true,
-                validate: {
-                  matchPatern: (value) =>
-                    /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
-                    "Email address must be a valid address",
-                },
-              })}
-            />
-            <Input
-              label="Password: "
-              type="password"
-              className="flex text-[1rem] text-center outline-none m-auto h-10 w-[90%] rounded-2xl"
-              placeholder="Enter your password"
-              {...register("password", {
-                required: true,
-              })}
-            />
+              <Input
+                label="Email: "
+                placeholder="Enter your email"
+                type="email"
+                className="flex text-[1rem] outline-none text-center m-auto h-10 w-[90%] rounded-2xl"
+                {...register("email", {
+                  required: true,
+                  validate: {
+                    matchPatern: (value) =>
+                      /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
+                        value
+                      ) || "Email address must be a valid address",
+                  },
+                })}
+              />
+              <Input
+                label="Password: "
+                type="password"
+                className="flex text-[1rem] text-center outline-none m-auto h-10 w-[90%] rounded-2xl"
+                placeholder="Enter your password"
+                {...register("password", {
+                  required: true,
+                })}
+              />
             </div>
-            <Button type="submit" className="w-full h-12 rounded-2xl text-xl font-bold">
+            <Button
+              type="submit"
+              className="w-full h-12 rounded-2xl text-xl font-bold"
+            >
               Sign in
             </Button>
           </div>
