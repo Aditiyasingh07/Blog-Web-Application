@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Container, Logo, LogoutBtn} from "../index"
+import {Container, LogoutBtn} from "../index"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
@@ -39,13 +39,14 @@ function Header(){
       ]
     
       return (
-        <header className='py-3 shadow w-1/2 flex rounded-2xl bg-[#191970] mt-4 text-xl font-bold'>
+        <header className='py-3 shadow m-auto w-1/2 flex rounded-2xl bg-[#191970] mt-4 text-xl font-bold'>
           <Container>
             <nav className='flex'>
               <div className='mr-4 flex items-center text-[#F8F8FF]'>
-                <Link to='/'>
-                  <Logo width='70px'   />
-    
+                <Link to='/'
+                className=" bg-slate-50 rounded-full"
+                >
+                    <img src="src\assets\icon.png" alt="logo" width="50px"/>
                   </Link>
               </div>
               <ul className='flex ml-auto'>
