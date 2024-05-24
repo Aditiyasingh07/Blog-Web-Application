@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import appwriteService from "../../src/appwrite/config";
-import { Container, PostCard } from "../componenets/index";
+import appwriteService from "../../src/appwrite/config.js";
+import { Container, PostCard } from "../componenets/index.js";
 
 function Home() {
   const [posts, setPosts] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import './App.css'
-import authService from "../src/appwrite/auth"
+import authService from "../src/appwrite/auth.js"
 import {login, logout} from "./store/authSlice"
 import { Footer, Header } from './componenets/index'
 import { Outlet } from 'react-router-dom'
