@@ -30,7 +30,7 @@ function Signup() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="mx-auto w-1/3 bg-gray-800 rounded-3xl hover:rounded-xl duration-600 p-10 ">
+      <div className="mx-auto xl:w-1/3 w-1/1 bg-gray-800 rounded-3xl hover:rounded-xl duration-600 p-10 ">
         <div className="flex justify-center">
           <span className="bg-white rounded-full">
             <Logo/>

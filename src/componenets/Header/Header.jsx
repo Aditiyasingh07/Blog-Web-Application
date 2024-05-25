@@ -39,7 +39,7 @@ function Header(){
       ]
     
       return (
-        <header className='py-3 shadow m-auto w-1/2 flex rounded-2xl bg-[#191970] mt-4 text-xl font-bold'>
+        <header className='xl:py-3 py-4 md:m-auto w-full flex rounded-2xl bg-[#191970] xl:mt-4 text-xl font-bold xl:w-1/2 '>
           <Container>
             <nav className='flex'>
               <div className='mr-4 flex items-center text-[#F8F8FF]'>
