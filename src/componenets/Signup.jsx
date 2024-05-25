@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import authService from "../Appwrite/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/authSlice";
-import { Button, Input } from "./index";
+import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 
@@ -33,7 +33,7 @@ function Signup() {
       <div className="mx-auto w-1/3 bg-gray-800 rounded-3xl hover:rounded-xl duration-600 p-10 ">
         <div className="flex justify-center">
           <span className="bg-white rounded-full">
-            <img src="src\assets\icon.png" alt="logo" width="50px" />
+            <Logo/>
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">

@@ -33,7 +33,7 @@ function Login() {
       >
         <div className="mb-2 flex justify-center">
           <span className=" bg-white rounded-full">
-            <img src="src\assets\icon.png" alt="logo" width="50px" />
+            <Logo/>
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold text-[#ECF0F1]">

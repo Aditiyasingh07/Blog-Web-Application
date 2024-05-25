@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Container, LogoutBtn} from "../index"
+import {Container, Logo, LogoutBtn} from "../index"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
@@ -46,7 +46,7 @@ function Header(){
                 <Link to='/'
                 className=" bg-slate-50 rounded-full"
                 >
-                    <img src="src\assets\icon.png" alt="logo" width="50px"/>
+                    <Logo/>
                   </Link>
               </div>
               <ul className='flex ml-auto'>

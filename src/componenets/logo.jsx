@@ -4,7 +4,7 @@ function Logo() {
   return (
     <>
     <div>
-      <img src="12Blog\src\assets\icon.png" alt="#logo" width="45px" />
+      <img src="src/assets/icon.png" alt="#logo" width="45px" />
     </div>
     </>
   );
