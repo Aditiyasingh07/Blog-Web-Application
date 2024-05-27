@@ -41,15 +41,15 @@ function Header(){
       return (
         <header className='xl:py-3 py-4 md:m-auto w-full flex rounded-2xl bg-[#191970] xl:mt-4 text-xl font-bold xl:w-1/2 '>
           <Container>
-            <nav className='flex'>
-              <div className='mr-4 flex items-center text-[#F8F8FF]'>
+            <nav className='xl:flex'>
+              <div className='mr-4 flex xl:items-center justify-center text-[#F8F8FF]'>
                 <Link to='/'
                 className=" bg-slate-50 rounded-full"
                 >
                     <Logo/>
                   </Link>
               </div>
-              <ul className='flex ml-auto'>
+              <ul className='flex ml-auto justify-center'>
                 {navItems.map((item) => 
                 item.active ? (
                   <li key={item.name}>
