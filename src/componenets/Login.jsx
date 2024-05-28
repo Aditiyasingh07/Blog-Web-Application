@@ -29,12 +29,10 @@ function Login() {
   return (
     <div className="flex">
       <div
-        className={`mx-auto bg-gray-800 my-10 hover:rounded-xl duration-600 rounded-3xl p-10`}
+        className={`mx-auto bg-gray-800 my-10 hover:rounded-xl duration-500 rounded-3xl p-10`}
       >
         <div className="mb-2 flex justify-center">
-          <span className=" bg-white rounded-full">
             <Logo/>
-          </span>
         </div>
         <h2 className="text-center text-2xl font-bold text-[#ECF0F1]">
           Login in to your account
@@ -81,7 +79,7 @@ function Login() {
               type="submit"
               className="w-full h-12 rounded-2xl text-xl font-bold"
             >
-              Sign in
+              Login
             </Button>
           </div>
         </form>

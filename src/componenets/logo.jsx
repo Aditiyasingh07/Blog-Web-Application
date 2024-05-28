@@ -3,7 +3,7 @@ import React from "react";
 function Logo() {
   return (
     <>
-      <img src="src/assets/icon.png" alt="#logo" width="45px" />
+      <h1 className=" font-extrabold bg-slate-900 p-3 rounded-full">BLOG</h1>
     </>
   );
 }

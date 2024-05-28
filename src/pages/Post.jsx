@@ -60,7 +60,7 @@ export default function Post() {
                 <div className="w-full my-10 text-center">
                     <h1 className="text-3xl font-bold">{post.title}</h1>
                 </div>
-                <div className="">
+                <div className=" bg-slate-800 text-[1.2rem] rounded-3xl p-10 w-[70%] m-auto">
                     {parse(post.content || "")}
                 </div>
             </Container>

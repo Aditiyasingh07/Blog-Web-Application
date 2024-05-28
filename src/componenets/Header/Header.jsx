@@ -43,9 +43,7 @@ function Header(){
           <Container>
             <nav className='xl:flex'>
               <div className='mr-4 flex xl:items-center justify-center text-[#F8F8FF]'>
-                <Link to='/'
-                className=" bg-slate-50 rounded-full"
-                >
+                <Link to='/'>
                     <Logo/>
                   </Link>
               </div>

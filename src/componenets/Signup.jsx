@@ -30,11 +30,9 @@ function Signup() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="mx-auto xl:w-1/3 w-1/1 bg-gray-800 rounded-3xl hover:rounded-xl duration-600 p-10 ">
+      <div className="mx-auto xl:w-1/3 w-1/1 bg-gray-800 rounded-3xl hover:rounded-xl duration-500 p-10 ">
         <div className="flex justify-center">
-          <span className="bg-white rounded-full">
-            <Logo/>
-          </span>
+          <Logo/>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">
           Sign up to create an account
@@ -51,17 +49,17 @@ function Signup() {
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
 
         <form onSubmit={handleSubmit(create)}>
-          <div className="space-y-5 mt-5 text-xl font-bold text-center">
+          <div className="space-y-5 mt-5 text-xl px-5 flex flex-col text-center">
             <Input
               label="Full Name: "
-              className=" w-[86%] rounded-2xl p-2 text-[1rem] text-center outline-none"
+              className=" w-full rounded-2xl p-2 text-[1rem] text-center outline-none"
               placeholder="Enter your full name"
               {...register("name", { required: true })}
             />
             <Input
               label="Email: "
               placeholder="Enter your email"
-              className=" w-[86%] rounded-2xl p-2 text-[1rem] text-center outline-none"
+              className=" w-full rounded-2xl flex p-2 text-[1rem] text-center outline-none"
               type="email"
               {...register("email", {
                 required: true,
@@ -75,7 +73,7 @@ function Signup() {
             <Input
               label="Password: "
               type="password"
-              className=" w-[86%] outline-none rounded-2xl p-2 text-[1rem] text-center"
+              className=" w-full outline-none rounded-2xl p-2 text-[1rem] text-center"
               placeholder="Enter your password"
               {...register("password", { required: true })}
             />
