@@ -41,8 +41,8 @@ function Header(){
       return (
         <header className='xl:py-3 py-4 m-auto flex rounded-2xl bg-[#191970] xl:mt-4 text-xl font-bold xl:w-1/2 '>
           <Container>
-            <nav className='xl:flex'>
-              <div className='mr-4 xl:text-xl text-[1rem] flex xl:items-center justify-center text-[#F8F8FF]'>
+            <nav className='xl:flex justify-around'>
+              <div className='mr-4 xl:text-xl text-[1rem] flex xl:justify-around justify-center text-[#F8F8FF]'>
                 <Link to='/'>
                     <Logo/>
                   </Link>
