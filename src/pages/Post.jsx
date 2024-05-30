@@ -58,9 +58,9 @@ export default function Post() {
                     )}
                 </div>
                 <div className="w-full my-10 text-center">
-                    <h1 className="text-3xl font-bold">{post.title}</h1>
+                    <h1 className="xl:text-3xl text-xl font-bold">{post.title}</h1>
                 </div>
-                <div className=" bg-slate-800 text-[1.2rem] rounded-3xl p-10 xl:w-[70%] m-auto">
+                <div className=" bg-slate-800 text-sm  xl:text-[1.2rem] rounded-3xl xl:p-10 p-5 text-center xl:w-[70%] m-auto">
                     {parse(post.content || "")}
                 </div>
             </Container>

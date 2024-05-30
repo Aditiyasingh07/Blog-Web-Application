@@ -28,7 +28,7 @@ function App() {
       <div className="w-full block">
         <Header />
         <main>
-          <div className=" text-3xl font-bold text-center mt-5">Blogs</div>
+          <div className=" xl:text-3xl text-xl font-bold text-center mt-5">Blogs</div>
           <Outlet />
         </main>
         <Footer />

@@ -31,13 +31,13 @@ function Login() {
       <div
         className={`mx-auto bg-gray-800 my-10 hover:rounded-xl duration-500 rounded-3xl p-10`}
       >
-        <div className="mb-2 flex justify-center">
+        <div className=" mb-2 flex justify-center">
             <Logo/>
         </div>
-        <h2 className="text-center text-2xl font-bold text-[#ECF0F1]">
+        <h2 className="text-center xl:text-2xl text-xl font-bold text-[#ECF0F1]">
           Login in to your account
         </h2>
-        <p className="mt-2 text-center text-base text-[#ECF0F1]">
+        <p className="mt-2 text-center xl:text-xl text-sm text-[#ECF0F1]">
           Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"
@@ -49,12 +49,12 @@ function Login() {
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
-            <div className=" text-xl flex flex-col gap-y-4 text-center">
+            <div className=" xl:text-xl text-sm  flex flex-col gap-y-4 text-center">
               <Input
                 label="Email: "
                 placeholder="Enter your email"
                 type="email"
-                className="flex text-[1rem] outline-none text-center m-auto h-10 w-[90%] rounded-2xl"
+                className="flex xl:text-[1rem] text-sm outline-none text-center m-auto h-10 w-[90%] rounded-2xl"
                 {...register("email", {
                   required: true,
                   validate: {
@@ -68,7 +68,7 @@ function Login() {
               <Input
                 label="Password: "
                 type="password"
-                className="flex text-[1rem] text-center outline-none m-auto h-10 w-[90%] rounded-2xl"
+                className="flex text-[1rem] text-sm text-center outline-none m-auto h-10 w-[90%] rounded-2xl"
                 placeholder="Enter your password"
                 {...register("password", {
                   required: true,

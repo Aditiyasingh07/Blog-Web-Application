@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <section className=" fixed bottom-10 right-10 w-52 py-2 px-5 rounded-3xl bg-slate-600">
+    <section className=" fixed xl:bottom-10 bottom-3 xl:text-xl text-xs xl:right-10 right-3 xl:w-52 w-[180px] xl:py-2 py-1 px-5 rounded-3xl bg-slate-600">
       <div className=" flex items-center justify-between">
         <Logo/>
         <div>

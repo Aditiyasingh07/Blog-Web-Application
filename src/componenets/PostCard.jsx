@@ -8,7 +8,7 @@ function PostCard({ $id, title, featuredImage }) {
       <div className="w-full rounded-xl hover:rounded-3xl p-4">
         <div className="w-full flex xl:justify-center justify-center mb-4">
           <img
-            src={appwriteService.getFilePreview(featuredImage)}
+            src={`/images/${appwriteService.getFilePreview(featuredImage)}`}
             alt={title}
             className="rounded-xl h-60"
           />

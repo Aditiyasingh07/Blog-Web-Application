@@ -34,10 +34,10 @@ function Signup() {
         <div className="flex justify-center">
           <Logo/>
         </div>
-        <h2 className="text-center text-2xl font-bold leading-tight">
+        <h2 className="text-center xl:text-2xl text-xl font-bold leading-tight">
           Sign up to create an account
         </h2>
-        <p className="mt-2 text-center">
+        <p className="mt-2 text-center xl:text-xl text-sm">
           Already have an account?&nbsp;
           <Link
             to="/login"
@@ -49,10 +49,10 @@ function Signup() {
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
 
         <form onSubmit={handleSubmit(create)}>
-          <div className="space-y-5 mt-5 text-xl px-5 flex flex-col text-center">
+          <div className="space-y-5 mt-5 xl:text-xl text-sm px-5 flex flex-col text-center">
             <Input
               label="Full Name: "
-              className=" w-full rounded-2xl p-2 text-[1rem] text-center outline-none"
+              className=" w-full rounded-2xl p-2 xl:text-[1rem] text-sm text-center outline-none"
               placeholder="Enter your full name"
               {...register("name", { required: true })}
             />
