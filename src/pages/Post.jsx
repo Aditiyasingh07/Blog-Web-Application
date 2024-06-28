@@ -39,7 +39,7 @@ export default function Post() {
                     <img
                         src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
-                        className="rounded-3xl w-[80%] m-auto"
+                        className="rounded-3xl w-[70%] m-auto"
                     />
 
                     {isAuthor && (
@@ -60,7 +60,7 @@ export default function Post() {
                 <div className="w-full my-10 text-center">
                     <h1 className="xl:text-3xl text-xl font-bold">{post.title}</h1>
                 </div>
-                <div className=" bg-slate-800 text-sm  xl:text-[1.2rem] rounded-3xl xl:p-10 p-5 text-center xl:w-[70%] m-auto">
+                <div className=" bg-slate-800 text-sm  xl:text-[1.2rem] rounded-3xl xl:p-10 p-5 leading-relaxed xl:w-[90%] m-auto">
                     {parse(post.content || "")}
                 </div>
             </Container>
