@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import appwriteService from "../Appwrite/config.js";
 import { Container, PostCard } from "../componenets/index.js";
+import Loader from "./Loader.jsx";
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -18,10 +19,11 @@ function Home() {
       <div className="w-full py-8 mt-4 text-center">
         <Container>
           <div className="flex flex-wrap">
-            <div className="p-2 w-full">
-              <h1 className="xl:text-2xl text-xl font-bold hover:text-gray-500">
+            <div className="p-2 flex justify-center w-full">
+              <Loader/>
+              {/* <h1 className="xl:text-2xl text-xl font-bold hover:text-gray-500">
                 Login to read posts
-              </h1>
+              </h1> */}
             </div>
           </div>
         </Container>

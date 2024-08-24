@@ -76,6 +76,7 @@ export default function PostForm({ post }) {
     return () => subscription.unsubscribe();
   }, [watch, slugTransform, setValue]);
 
+
   return (
     <form onSubmit={handleSubmit(submit)} className="flex xl:gap-0 gap-y-5 my-10 flex-wrap">
       <div className="xl:w-2/3 w-full text-center px-2 xl:text-xl text-sm font-bold">
