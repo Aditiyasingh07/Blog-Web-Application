@@ -47,13 +47,13 @@ function Header(){
                     <Logo/>
                   </Link>
               </div>
-              <ul className='flex xl:text-xl text-sm xl:justify-center justify-evenly'>
+              <ul className='flex xl:text-xl md:mt-0 mt-3 text-sm xl:justify-center justify-evenly'>
                 {navItems.map((item) => 
                 item.active ? (
                   <li key={item.name}>
                     <button
                     onClick={() => navigate(item.slug)}
-                    className='flex xl:px-6 py-2 duration-700 hover:bg-blue-300 hover:text-black rounded-full'
+                    className='flex md:px-6 px-3 md:py-2 py-1 duration-700 hover:bg-blue-300 hover:text-black rounded-full'
                     >{item.name}</button>
                   </li>
                 ) : null
