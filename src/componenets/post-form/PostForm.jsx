@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Input, RTE, Select } from "..";
+import { Button, Input, postformlogo, RTE, Select } from "../index";
 import appwriteService from "../../Appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -96,7 +96,7 @@ export default function PostForm({ post }) {
         <img
         ref={postanimepng}
         className="h-[150px] w-[150px] rotate-12"
-        src="/src/assets/five.svg" alt="" />
+        src={postformlogo} alt="" />
         </div>
       <div className="xl:w-2/3 w-full text-center px-2 xl:text-xl text-sm font-bold">
         <div className="flex w-full flex-col gap-y-2 items-center">

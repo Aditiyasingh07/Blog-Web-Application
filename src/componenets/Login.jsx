@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import authService from "../Appwrite/auth";
 import { useForm } from "react-hook-form";
 import gsap from "gsap";
+import { loginlogo } from "./index";
 
 function Login() {
 
@@ -45,7 +46,7 @@ function Login() {
         <img
         ref={loginanime}
         className="h-[200px] w-[130px] rotate-12"
-        src="/src/assets/seven.png" alt="" />
+        src={loginlogo} alt="" />
         </div>
       <div
         className={`mx-auto login-class my-10 hover:rounded-xl duration-500 rounded-3xl p-10 z-50`}

@@ -5,6 +5,7 @@ import {Container, Logo, LogoutBtn} from "../index"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "/src/App.css"
+import { headerlogo } from "../index";
 
 function Header(){
 
@@ -57,7 +58,7 @@ function Header(){
         <img
         ref={animepng}
         className="h-[120px] w-[120px] rotate-12"
-        src="/src/assets/three.svg" alt="" />
+        src={headerlogo} alt="headerlogo" />
         </div>
           <header className=' header-class xl:py-3 py-4 m-auto flex rounded-2xl xl:mt-4 text-xl mb-24 font-bold xl:w-1/2'>
           <Container>

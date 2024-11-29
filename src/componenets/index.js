@@ -12,8 +12,15 @@ import Select from "./Select.jsx";
 import AuthLayout from "./AuthLayout.jsx";
 import Signup from "./Signup.jsx";
 import Input from "./input.jsx";
+import headerlogo from "/src/assets/three.svg"
+import loginlogo from "/src/assets/seven.png"
+import postformlogo from "/src/assets/five.svg"
+
 
 export {
+  headerlogo,
+  loginlogo,
+  postformlogo,
   Header,
   Footer,
   Container,
