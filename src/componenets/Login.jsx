@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authSlice";
 import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
 import authService from "../Appwrite/auth";
 import { useForm } from "react-hook-form";
+import gsap from "gsap";
 
 function Login() {
+
+  const loginanime = useRef(null)
+
+  useEffect(()=>{
+    gsap.to(loginanime.current, {
+      scale: 1.27,
+      duration: 5,
+      repeat: -1,
+      yoyo: true
+    })
+  })
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
@@ -28,8 +41,14 @@ function Login() {
 
   return (
     <div className="flex">
+      <div className=" absolute top-[200px] left-[500px] z-0">
+        <img
+        ref={loginanime}
+        className="h-[200px] w-[130px] rotate-12"
+        src="/src/assets/seven.png" alt="" />
+        </div>
       <div
-        className={`mx-auto bg-gray-800 my-10 hover:rounded-xl duration-500 rounded-3xl p-10`}
+        className={`mx-auto login-class my-10 hover:rounded-xl duration-500 rounded-3xl p-10 z-50`}
       >
         <div className=" mb-2 flex justify-center">
             <Logo/>

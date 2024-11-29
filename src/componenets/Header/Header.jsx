@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 import {Container, Logo, LogoutBtn} from "../index"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import "/src/App.css"
 
 function Header(){
+
+  const animepng = useRef(null)
+
+  useEffect(() => {
+    gsap.to(animepng.current, {
+      rotateZ: 360,
+      duration: 12,
+      repeat: -1,
+      yoyo: true,
+    });
+  }, []);
 
     const authStatus = useSelector((state) => state.auth.status)
 
@@ -39,7 +52,14 @@ function Header(){
       ]
     
       return (
-        <header className='xl:py-3 py-4 m-auto flex rounded-2xl bg-[#191970] xl:mt-4 text-xl font-bold xl:w-1/2 '>
+        <div>
+          <div className=" absolute top-[50px] right-[350px] z-0">
+        <img
+        ref={animepng}
+        className="h-[120px] w-[120px] rotate-12"
+        src="/src/assets/three.svg" alt="" />
+        </div>
+          <header className=' header-class xl:py-3 py-4 m-auto flex rounded-2xl xl:mt-4 text-xl mb-24 font-bold xl:w-1/2'>
           <Container>
             <nav className='xl:flex justify-around'>
               <div className='mr-4 xl:text-xl text-[1rem] flex xl:justify-around justify-center text-[#F8F8FF]'>
@@ -67,6 +87,7 @@ function Header(){
             </nav>
             </Container>
         </header>
+        </div>
       )
 }
 

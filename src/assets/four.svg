@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+  <path fill="url(#paint0_linear_2771_24384)" fill-rule="evenodd" d="m6.324 7.326-4.936-.849a1.078 1.078 0 0 0-.374 2.124l4.93.887-4.091 2.89a1.078 1.078 0 0 0 1.238 1.766l4.112-2.858-.849 4.936a1.078 1.078 0 0 0 2.124.374l.887-4.93 2.89 4.09a1.078 1.078 0 0 0 1.766-1.238l-2.858-4.111 4.936.848a1.078 1.078 0 0 0 .374-2.124l-4.93-.887 4.09-2.89a1.078 1.078 0 0 0-1.238-1.766l-4.111 2.858.848-4.935a1.078 1.078 0 0 0-2.124-.374l-.886 4.93-2.89-4.091a1.078 1.078 0 0 0-1.766 1.238l2.858 4.112Z" clip-rule="evenodd"/>
+  <path fill="url(#pattern-home-hero-btn-star-0)" fill-opacity=".6" fill-rule="evenodd" d="m6.324 7.326-4.936-.849a1.078 1.078 0 0 0-.374 2.124l4.93.887-4.091 2.89a1.078 1.078 0 0 0 1.238 1.766l4.112-2.858-.849 4.936a1.078 1.078 0 0 0 2.124.374l.887-4.93 2.89 4.09a1.078 1.078 0 0 0 1.766-1.238l-2.858-4.111 4.936.848a1.078 1.078 0 0 0 .374-2.124l-4.93-.887 4.09-2.89a1.078 1.078 0 0 0-1.238-1.766l-4.111 2.858.848-4.935a1.078 1.078 0 0 0-2.124-.374l-.886 4.93-2.89-4.091a1.078 1.078 0 0 0-1.766 1.238l2.858 4.112Z" clip-rule="evenodd" style="mix-blend-mode:multiply"/>
+  <defs>
+    <linearGradient id="paint0_linear_2771_24384" x1="24.729" x2="25.351" y1="8.665" y2="20.075" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0AE448"/>
+      <stop offset="1" stop-color="#0085D0"/>
+    </linearGradient>
+    <pattern id="pattern-home-hero-btn-star-0" width="11.452" height="11.452" patternContentUnits="objectBoundingBox">
+      <use xlink:href="#svg-noise" transform="scale(.0229)"/>
+    </pattern>
+  </defs>
+</svg>

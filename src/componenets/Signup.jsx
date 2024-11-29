@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
 import authService from "../Appwrite/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/authSlice";
@@ -7,6 +8,18 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 
 function Signup() {
+
+  const Signanime = useRef(null)
+
+  useEffect(()=>{
+    gsap.to(Signanime.current, {
+      rotate: 360,
+      duration: 15,
+      repeat: -1,
+      yoyo: true
+    })
+  })
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [error, setError] = useState("");
@@ -30,7 +43,13 @@ function Signup() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="mx-auto xl:w-1/3 w-1/1 bg-gray-800 rounded-3xl hover:rounded-xl duration-500 p-10 ">
+      <div className=" absolute top-[250px] left-[350px] z-0">
+        <img
+        ref={Signanime}
+        className="h-[250px] w-[250px] rotate-12"
+        src="/src/assets/four.svg" alt="" />
+        </div>
+      <div className="mx-auto xl:w-1/3 w-1/1 login-class rounded-3xl hover:rounded-xl duration-500 p-10 ">
         <div className="flex justify-center">
           <Logo/>
         </div>

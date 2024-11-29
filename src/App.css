@@ -44,3 +44,18 @@
 .read-the-docs {
   color: #888;
 } */
+.header-class{
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 120px 20px #191970;
+  backdrop-filter: blur(7px);
+  color: #fff;
+}
+
+.login-class{
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* box-shadow: 1px 50px 50px 5px lightblue; */
+  backdrop-filter: blur(7px);
+  /* color: #fff; */
+}

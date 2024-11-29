@@ -1,9 +1,11 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Input, RTE, Select } from "..";
 import appwriteService from "../../Appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import gsap from "gsap";
+import '/src/App.css'
 
 export default function PostForm({ post }) {
   const { register, handleSubmit, watch, setValue, control, getValues } =
@@ -15,6 +17,17 @@ export default function PostForm({ post }) {
         status: post?.status || "active",
       },
     });
+
+    const postanimepng = useRef(null)
+
+    useEffect(()=>{
+      gsap.to(postanimepng.current, {     
+      scale: 1.3,
+      duration: 12,
+      repeat: -1,
+      yoyo: true,
+      })
+    })
 
   const navigate = useNavigate();
   const userData = useSelector((state) => state.auth.userData);
@@ -79,6 +92,12 @@ export default function PostForm({ post }) {
 
   return (
     <form onSubmit={handleSubmit(submit)} className="flex xl:gap-0 gap-y-5 my-10 flex-wrap">
+      <div className=" absolute bottom-[180px] right-[100px] z-0">
+        <img
+        ref={postanimepng}
+        className="h-[150px] w-[150px] rotate-12"
+        src="/src/assets/five.svg" alt="" />
+        </div>
       <div className="xl:w-2/3 w-full text-center px-2 xl:text-xl text-sm font-bold">
         <div className="flex w-full flex-col gap-y-2 items-center">
           <label>Title</label>
@@ -139,7 +158,7 @@ export default function PostForm({ post }) {
         <Button
           type="submit"
           bgColor={post ? "bg-green-900" : undefined}
-          className=" xl:w-[80%] w-full h-10 rounded-2xl font-bold"
+          className=" md:w-[80%] relative login-class bg-transparent shadow-blue-800 mt-5 shadow-2xl py-5 z-50 w-full text-xl rounded-2xl font-bold"
         >
           {post ? "Update" : "Submit"}
         </Button>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 29 29">
+					<path fill="url(#paint0_radial_2937_56158)" fill-rule="evenodd" d="M8.54 14.187c-.469.099-.954.15-1.451.15C3.174 14.337 0 11.127 0 7.17 0 3.209 3.174 0 7.089 0c3.915 0 7.09 3.21 7.09 7.169 0 .33-.023.657-.066.976h.774a7.318 7.318 0 0 1-.065-.976C14.822 3.209 17.996 0 21.91 0 25.826 0 29 3.21 29 7.169c0 3.959-3.174 7.168-7.089 7.168-.44 0-.87-.04-1.288-.118v.562a7.048 7.048 0 0 1 1.288-.118c3.915 0 7.089 3.21 7.089 7.168C29 25.791 25.826 29 21.911 29c-3.915 0-7.09-3.21-7.09-7.169 0-.502.052-.993.15-1.466h-.91c.077.423.117.858.117 1.304 0 3.959-3.174 7.168-7.089 7.168C3.174 28.837 0 25.627 0 21.67c0-3.96 3.174-7.169 7.089-7.169.497 0 .982.052 1.45.15v-.463Z" clip-rule="evenodd"/>
+					<path fill="url(#pattern-header-logo-p-0)" fill-rule="evenodd" d="M8.54 14.187c-.469.099-.954.15-1.451.15C3.174 14.337 0 11.127 0 7.17 0 3.209 3.174 0 7.089 0c3.915 0 7.09 3.21 7.09 7.169 0 .33-.023.657-.066.976h.774a7.318 7.318 0 0 1-.065-.976C14.822 3.209 17.996 0 21.91 0 25.826 0 29 3.21 29 7.169c0 3.959-3.174 7.168-7.089 7.168-.44 0-.87-.04-1.288-.118v.562a7.048 7.048 0 0 1 1.288-.118c3.915 0 7.089 3.21 7.089 7.168C29 25.791 25.826 29 21.911 29c-3.915 0-7.09-3.21-7.09-7.169 0-.502.052-.993.15-1.466h-.91c.077.423.117.858.117 1.304 0 3.959-3.174 7.168-7.089 7.168C3.174 28.837 0 25.627 0 21.67c0-3.96 3.174-7.169 7.089-7.169.497 0 .982.052 1.45.15v-.463Z" clip-rule="evenodd" style="mix-blend-mode: multiply"/>
+					<defs>
+						<radialGradient id="paint0_radial_2937_56158" cx="0" cy="0" r="1" gradientTransform="rotate(-90 14.86 5.937) scale(22.8436)" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#E193FF"/>
+							<stop offset=".672" stop-color="#8E78DA"/>
+							<stop offset=".738" stop-color="#937DDB"/>
+							<stop offset=".816" stop-color="#A28BDD"/>
+							<stop offset=".901" stop-color="#BAA3E2"/>
+							<stop offset=".991" stop-color="#DBC3E7"/>
+							<stop offset="1" stop-color="#DFC7E8"/>
+						</radialGradient>
+						<pattern id="pattern-header-logo-p-0" width="3.448" height="3.448" patternContentUnits="objectBoundingBox">
+							<use xlink:href="#svg-noise" transform="scale(.0069)"/>
+						</pattern>
+					</defs></svg>
